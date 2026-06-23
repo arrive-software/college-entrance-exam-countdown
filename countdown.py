@@ -9,10 +9,6 @@
 import turtle
 import time
 
-# ================== 配置目标时间 ==================
-# 格式："年-月-日 时:分:秒" (24小时制)
-TARGET_STR = "2027-01-01 00:00:00"
-# =================================================
 
 def countdown_to_datetime():
     target_timestamp = 1812330000
@@ -36,7 +32,7 @@ def countdown_to_datetime():
 
         if remaining_seconds <= 0:
             pen.clear()
-            pen.write("时间到！", align="center",
+            pen.write("彩蛋", align="center",
                       font=("Arial", 50, "bold"))
             return
 
